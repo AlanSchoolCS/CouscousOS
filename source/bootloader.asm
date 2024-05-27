@@ -24,7 +24,7 @@ wait_for_key:
 
 read_character:
     mov ah, 0
-    int 0x16            ; BIOS keyboard service
+    int 0x16            ; get next character using BIOS keyboard service
     ret                 ; go back to "wait_for_key"
 
 display_character:      ; print a single character in al
@@ -32,7 +32,7 @@ display_character:      ; print a single character in al
     int 0x10            ; Print character in AL
     ret                 ; go back to "wait_for_key"
 
-hello_msg db 'Hello, World!', 0
+hello_msg db 'Hello, World! :)', 0
 
 times 510-($-$$) db 0
 dw 0xAA55
