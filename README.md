@@ -5,7 +5,7 @@ My Computer Science Internal Assessment: an operating system written in NASM and
 ## Installation
 ### Virtual Machine
 *This guide requires you to be on a Linux based system, if on Windows, then it is recommended to install the "Windows Subsystem for Linux" (WSL)*
-*To install the WSL, simply run the command:* `wsl --install` *and follow the on-screen prompts*
+*To install the WSL, simply run the command:* `wsl --install` *and follow the on-screen prompts, before restarting your system.*
 
 (Before install, make sure you run `sudo apt update`, in order to ensure your package list is up to date)
 
