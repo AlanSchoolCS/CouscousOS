@@ -1,2 +1,2 @@
 # CouscousOS
-My Computer Science Internal Assessment: an operating system with incorporated visualisers
+My Computer Science Internal Assessment: an operating system written in NASM and C, with incorporated visualisers
