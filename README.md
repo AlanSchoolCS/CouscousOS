@@ -3,7 +3,7 @@ My Computer Science Internal Assessment: an operating system written in NASM and
 
 ---
 # Table of contents
-1) [Installation Guide](#installation)
+1) [Current Features](#features)
 2) [Installation Guide](#installation)
 
 ---
@@ -25,9 +25,7 @@ My Computer Science Internal Assessment: an operating system written in NASM and
    nasm -v
    gcc --version
    ```
-
 4) Run the build script located in `source/build.sh`
-
 5) Enjoy your emulated CouscousOS experience! 🎉🎉
 
 ### x86 based device
