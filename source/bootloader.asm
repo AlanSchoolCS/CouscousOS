@@ -11,8 +11,17 @@ start:
     mov si, thanks
     call print_string
 
-    jmp hang
+    ; construct process stack
+    ; clear registers (set to 0)
+    xor ax, ax
+    mov ds, ax
+    mov es, ax
+    mov ss, ax
+    mov sp, 0x7C00      ; set stack pointer to top memory address
 
+    ; ... TODO load C kernel
+
+    jmp hang
 
 print_string:           ; print string of characters
     lodsb               ; Load next character into al
