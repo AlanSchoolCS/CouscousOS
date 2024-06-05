@@ -19,9 +19,20 @@ start:
     mov ss, ax
     mov sp, 0x7C00      ; set stack pointer to top memory address
 
-    ; ... TODO load C kernel
+    ; Load kernel from second disk sector
+    mov ax, 0x1000
+    mov es, ax
+    mov bx, 0x0000      ; internal offset
+    mov ah, 0x02
+    mov al, 1
+    mov ch, 0
+    mov cl, 2           ; start on line 1
+    mov dh, 0
+    int 0x13
 
-    jmp hang
+    ; goto kernel
+    jmp 0x1000:0x0000
+
 
 print_string:           ; print string of characters
     lodsb               ; Load next character into al
